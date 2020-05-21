@@ -2,8 +2,8 @@
 
 def nyc_pigeon_organizer(data)
   organized_pigeon_nds = {}
-  data.each do |category_key, details_array|
-    hash_of_details.each do |detail_key, names_array|
+  data.each do |category_key, details_hash|
+    details_hash.each do |detail_key, names_array|
       names_array.each do |name_string|
 
         organized_pigeon_nds[name_string][category_key] = []
@@ -13,4 +13,5 @@ def nyc_pigeon_organizer(data)
     end
 
   end
+  organized_pigeon_nds
 end
