@@ -1,9 +1,9 @@
 require "pry"
 
 def nyc_pigeon_organizer(data)
-  binding.pry
   organized_pigeon_nds = {}
   data.each do |category_key, details_hash|
+    binding.pry
     details_hash.each do |detail_key, names_array|
       names_array.each do |name_string|
 
