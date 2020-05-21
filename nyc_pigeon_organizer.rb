@@ -6,8 +6,9 @@ def nyc_pigeon_organizer(data)
     details_hash.each do |detail_key, names_array|
 
       names_array.each do |name_string|
-        binding.pry
+        
         organized_pigeon_nds[name_string][category_key] = []
+        binding.pry
         organized_pigeon_nds[name_string][category_key] << detail_key.to_s
 
       end
