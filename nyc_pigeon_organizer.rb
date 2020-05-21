@@ -7,9 +7,7 @@ def nyc_pigeon_organizer(data)
 
       names_array.each do |name_string|
 
-        organized_pigeon_nds[name_string][category_key] = []
-        binding.pry
-        organized_pigeon_nds[name_string][category_key] << detail_key.to_s
+        organized_pigeon_nds[name_string] = {}
         binding.pry
       end
     end
