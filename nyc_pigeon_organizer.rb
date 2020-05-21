@@ -1,6 +1,7 @@
-# category, detail, name
+require "pry"
 
 def nyc_pigeon_organizer(data)
+  binding.pry
   organized_pigeon_nds = {}
   data.each do |category_key, details_hash|
     details_hash.each do |detail_key, names_array|
